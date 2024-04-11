@@ -10,7 +10,7 @@ import userRoute from "./routes/user.route.js";
 
 const app = express();
 
-app.use(cors({ origin: "https://rent-ease-client.vercel.app/", credentials: true }));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
