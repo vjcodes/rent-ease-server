@@ -8,9 +8,9 @@ import userRoute from "./routes/user.route.js";
 // import chatRoute from "./routes/chat.route.js";
 // import messageRoute from "./routes/message.route.js";
 
-app.use(cors({ origin: "https://rent-ease-client.vercel.app/", credentials: true }));
+const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "https://rent-ease-client.vercel.app/", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
